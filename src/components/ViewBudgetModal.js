@@ -2,7 +2,6 @@ import { Modal, Button,Stack,Card } from 'react-bootstrap';
 import { UNCATEGORIZED_ID, useBudgetsContextValue } from '../contexts/BudgetsContext';
 
 export default function ViewBudgetModal({ show, handleClose, budgetId }) {
-	console.log("Render");
 
 	const { budgets, getBudgetExpenses, removeExpense, removeBudget } = useBudgetsContextValue();
 	if (budgetId === '') return null;

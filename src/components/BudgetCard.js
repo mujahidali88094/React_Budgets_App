@@ -1,9 +1,11 @@
 export default function BudgetCard({ name, max, current,hideButtons,onAddExpenseClick,onViewExpensesClick }) {
-	let progress=0,colorClass="";
-	progress = Math.ceil((current / max)*100);
-	if (progress <= 50) colorClass = "bg-success";
-	else if (progress <= 75) colorClass = "bg-warning";
-	else colorClass = "bg-danger";
+	let progress = 0, colorClass = "";
+	if (max != undefined && max != null && max!=0) {
+		progress = Math.ceil((current / max) * 100);
+		if (progress <= 50) colorClass = "bg-success";
+		else if (progress <= 75) colorClass = "bg-warning";
+		else colorClass = "bg-danger";
+	}
 
 
 	
@@ -13,12 +15,12 @@ export default function BudgetCard({ name, max, current,hideButtons,onAddExpense
 				<div className="card-title d-flex justify-content-between font-weight-bold align-items-baseline">
 					<h5>{name}</h5>
 					<div>${current}
-					{max &&
-						<span className="text-muted">/${max}</span>
-					}
+						{(max!=undefined && max!=null) &&
+							<span className="text-muted">/${max}</span>
+						}
 					</div>
 				</div>
-				{max &&
+				{(max!=undefined && max!=null) &&
 					<div className="progress my-3">
 						<div className={"progress-bar " + colorClass} role="progressbar" aria-valuenow={progress}
 							aria-valuemin="0" aria-valuemax="100" style={{ width: progress + "%" }}>

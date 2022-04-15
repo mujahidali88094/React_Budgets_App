@@ -19,7 +19,6 @@ function App() {
   const [budgetIdForViewBudget, setBudgetIdForViewBudget] = useState('');
 
   let totalBudget = 0;
-  console.log(budgets);
   budgets.forEach(budget => totalBudget+=parseInt(budget.max));
   let totalExpense = 0;
   expenses.forEach(expense => totalExpense += parseInt(expense.amount));
@@ -27,8 +26,7 @@ function App() {
   expenses.forEach(expense => {
     if (expense.budgetId === UNCATEGORIZED_ID)
       uncategorizedExpenses += parseInt(expense.amount);
-  })
-
+  });
 
 
   return (
@@ -78,7 +76,7 @@ function App() {
           ></BudgetCard>)
         })
       }
-
+      
       <BudgetCard 
         name="Total"
         max={totalBudget}
