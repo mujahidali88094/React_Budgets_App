@@ -1,3 +1,15 @@
+# Description
+This project manages budgets and expenses.
+# Techinal Details
+This project was aimed to use as many hooks as possible.
+Currently it uses:
+  useState,
+  useEffect,
+  useRef,
+  useContext,
+  useLocalStorage (custom hook to sustain data between page-refreshes)
+# Link to App
+https://mujahidali88094.github.io/React_Budgets_App/
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
