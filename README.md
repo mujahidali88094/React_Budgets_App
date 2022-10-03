@@ -12,6 +12,8 @@
 * Change Limit of A Budget
    (in case of decreasing limit, one can move the exceeding expenses to uncategorized section)
 * use of other hooks (use case is one's imagination)
+* recent expenses overall and for each budget
+* expenses graph
 # Description
 This project manages budgets and expenses. You can add a budget and set it's limit. Then you can add expenses to a budget and track your pocket.
 # Technical Details
