@@ -1,14 +1,29 @@
+# For Hacktoberfest
+## Notes
+* Contact here mujahidali88094@gmail.com with 'hacktoberfest_help' in title.
+* Please first visit https://mujahidali88094.github.io/React_Budgets_App/ to see it working.
+* Do read this https://www.freecodecamp.org/news/how-to-contribute-to-open-source-projects-beginners-guide/#howtosubmitapullrequest if it is your first time.
+* Don't forget to run **npm install** after downloading the code and before running **npm start**.
+* Do checkout https://github.com/mujahidali88094/React_Budgets_App/edit/main/README.md#possible-additions section if you are unable to identify a possible change.
+## Possible additions
+* Live Search Budgets Feature (search results update as one types in the searchbar)
+* Delete Budget button is also displayed in this list of budget
+* Delete all budgets
+* Change Limit of A Budget
+   (in case of decreasing limit, one can move the exceeding expenses to uncategorized section)
+* use of other hooks (use case is one's imagination)
 # Description
-This project manages budgets and expenses.
-# Techinal Details
-This project was aimed to use as many hooks as possible.
-Currently it uses:<br>
-  **useState,<br>
-  useEffect,<br>
-  useRef,<br>
-  useContext,<br>
-  useLocalStorage (custom hook to sustain data between page-refreshes)<br>**
-# Link to App
+This project manages budgets and expenses. You can add a budget and set it's limit. Then you can add expenses to a budget and track your pocket.
+# Technical Details
+This project was aimed to use as many react hooks as possible.
+Currently it uses:
+  * useState
+  * useEffect
+  * useRef
+  * useContext
+  * useLocalStorage (custom hook to sustain data between page-refreshes)
+  * useBudgetsContextValue (just a wrapper above useContext to get context_value)
+# Link to Deployed App
 https://mujahidali88094.github.io/React_Budgets_App/
 # Getting Started with Create React App
 
@@ -25,58 +40,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
