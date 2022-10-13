@@ -31,7 +31,7 @@ export default function AddExpenseModal({ show, handleClose, defaultBudgetId }) 
 
 					<Form.Group className="mb-3" controlId="amount">
 						<Form.Label>Amount Spent</Form.Label>
-            <div className="dollar-prefix">$</div>
+						<div className="dollar-prefix">$</div>
 						<Form.Control className='dollar-input' ref={amountRef} type="number" step="1" defaultValue="1" min="0"/>
 					</Form.Group>
 					<Form.Group className="mb-3">
