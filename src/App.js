@@ -8,9 +8,10 @@ import {
 import AddExpenseModal from "./components/AddExpenseModal";
 import AddBudgetModal from "./components/AddBudgetModal";
 import ViewBudgetModal from "./components/ViewBudgetModal";
+import { Button } from "react-bootstrap";
 
 function App() {
-  const { budgets, expenses, getBudgetExpenses } = useBudgetsContextValue();
+  const { budgets, expenses, getBudgetExpenses, removeBudget } = useBudgetsContextValue();
 
   const [showAddExpense, setShowAddExpense] = useState(false);
   const [showAddBudget, setShowAddBudget] = useState(false);
@@ -49,6 +50,14 @@ function App() {
           >
             Add Expense
           </div>
+          <Button
+            variant="outline-danger"
+            size="sm"
+            className="m-1"
+            onClick={() => budgets.forEach((budget) => removeBudget(budget.id))}
+          >
+            Clear Budgets
+          </Button>
         </div>
       </h2>
       {/* <BudgetCard
