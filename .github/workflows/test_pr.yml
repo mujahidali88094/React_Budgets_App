@@ -1,0 +1,24 @@
+name: PR_BREAKS_ON_MERGE_OR_NOT
+
+on:
+  pull_request:
+    branches: [ master ]
+    
+jobs:
+  test_pull_request:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [16.x]
+        
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+
+      - name: Install
+        run: npm ci
+       
+      - name: Build
+        run: npm run build
+      
