@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.dollar-input {
+  padding-left: 25px !important;
+}
+
+.dollar-prefix {
+  position: relative;
+  height: 0;
+  left: 15px;
+  top: 7px;
+  width: -moz-fit-content;
+  width: fit-content;
+}

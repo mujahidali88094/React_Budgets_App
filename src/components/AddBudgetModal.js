@@ -29,8 +29,9 @@ export default function AddBudgetModal({ show, handleClose }) {
 					</Form.Group>
 
 					<Form.Group className="mb-3" controlId="max">
-						<Form.Label>Maximum Limit</Form.Label>
-						<Form.Control ref={maxRef} type="number" step="10" defaultValue="100" min="0"/>
+						<Form.Label>Budget Amount</Form.Label>
+						<div className="dollar-prefix">$</div>
+						<Form.Control className='dollar-input' ref={maxRef} type="number" step="10" defaultValue="100" min="0"/>
 					</Form.Group>
 
 				</Form>
