@@ -2,7 +2,7 @@ name: PR_BREAKS_ON_MERGE_OR_NOT_(REACT)
 
 on:
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
     
 jobs:
   test_pull_request:
