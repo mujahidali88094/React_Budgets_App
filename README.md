@@ -7,8 +7,6 @@
 * Do checkout https://github.com/mujahidali88094/React_Budgets_App/edit/main/README.md#possible-additions section if you are unable to identify a possible change.
 ## Possible additions
 * Live Search Budgets Feature (search results update as one types in the searchbar)
-* Delete Budget button is also displayed in this list of budget
-* Delete all budgets
 * Change Limit of A Budget
    (in case of decreasing limit, one can move the exceeding expenses to uncategorized section)
 * use of other hooks (use case is one's imagination)
