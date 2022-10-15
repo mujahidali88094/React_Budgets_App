@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/React_Budgets_App/static/css/main.647078a0.css",
-    "main.js": "/React_Budgets_App/static/js/main.dc2a4d5d.js",
+    "main.css": "/React_Budgets_App/static/css/main.70d109fe.css",
+    "main.js": "/React_Budgets_App/static/js/main.f30b9bf2.js",
     "index.html": "/React_Budgets_App/index.html",
-    "main.647078a0.css.map": "/React_Budgets_App/static/css/main.647078a0.css.map",
-    "main.dc2a4d5d.js.map": "/React_Budgets_App/static/js/main.dc2a4d5d.js.map"
+    "main.70d109fe.css.map": "/React_Budgets_App/static/css/main.70d109fe.css.map",
+    "main.f30b9bf2.js.map": "/React_Budgets_App/static/js/main.f30b9bf2.js.map"
   },
   "entrypoints": [
-    "static/css/main.647078a0.css",
-    "static/js/main.dc2a4d5d.js"
+    "static/css/main.70d109fe.css",
+    "static/js/main.f30b9bf2.js"
   ]
 }
