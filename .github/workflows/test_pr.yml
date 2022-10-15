@@ -1,4 +1,4 @@
-name: PR_BREAKS_ON_MERGE_OR_NOT
+name: PR_BREAKS_ON_MERGE_OR_NOT_(REACT)
 
 on:
   pull_request:
@@ -20,5 +20,5 @@ jobs:
         run: npm ci
        
       - name: Build
-        run: npm run build
+        run: CI=false npm run build
       
