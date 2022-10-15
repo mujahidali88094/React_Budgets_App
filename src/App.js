@@ -1,15 +1,3 @@
-import "./App.css";
-import { useState } from "react";
-import BudgetCard from "./components/BudgetCard";
-import {
-  useBudgetsContextValue,
-  UNCATEGORIZED_ID,
-} from "./contexts/BudgetsContext";
-import AddExpenseModal from "./components/AddExpenseModal";
-import AddBudgetModal from "./components/AddBudgetModal";
-import ViewBudgetModal from "./components/ViewBudgetModal";
-import { Button } from "react-bootstrap";
-
 function App() {
   const { budgets, expenses, getBudgetExpenses, removeBudget } = useBudgetsContextValue();
 
